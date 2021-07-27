@@ -1,15 +1,173 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MasekTree</title>
+    <title>MasekFamilyTree</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'custom', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <div class="scroll-to-top">
+     <a href="#"><img alt="" src="images/backtotop.png"></a></div>
+  <header>
+    <div class="container">
+ 		<p class="brand"><a href="index.html">
+ 		<img alt="" class="img-left" <%= image_tag 'logo.png' %> Masek Family Tree</p>
+ 		<p class="slogan">Searching for Ancestors</p>
+ 	</div>
+  </header>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link has-text-white">
+          Home
+        </a>
+        <div class="navbar-dropdown">
+          <%= link_to 'Surnames', '#', :class=>"navbar-item" %>
+      	  <%= link_to 'Search This Site', '#', :class=>"navbar-item" %>
+      		<%= link_to 'Addresses', '#', :class=>"navbar-item" %>
+      		<%= link_to  'Queries', '#', :class=>"navbar-item" %>
+      		<%= link_to 'FAQ', '#', :class=>"navbar-item" %>
+      		<%= link_to  'New', '#', :class=>"navbar-item" %>
+      		<%= link_to 'Research Tips', '#', :class=>"navbar-item" %>
+    		  <%= link_to 'Contact', '#', :class=>"navbar-item" %>
+        </div>
+      </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link has-text-white">
+          Cemataries
+        </a>
+        <div class="navbar-dropdown">
+          <%= link_to 'Inscriptions', '#', :class=>"navbar-item" %>
+				  <%= link_to 'Submitting Names', '#', :class=>"navbar-item" %>
+        </div>
+      </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link has-text-white">
+          Census
+        </a>
+        <div class="navbar-dropdown">
+          <%= link_to '1840 Census', '#', :class=>"navbar-item" %>
+				  <%= link_to '1866 Census', '#', :class=>"navbar-item" %>
+				  <%= link_to '1830 Census', '#', :class=>"navbar-item" %>
+				  <%= link_to '1870 Census', '#', :class=>"navbar-item" %>
+        </div>
+      </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link has-text-white">
+          Court
+        </a>
+        <div class="navbar-dropdown">
+          <%= link_to 'Legal Terms', '#', :class=>"navbar-item" %>
+				  <%= link_to 'Adm. Record Books', '#', :class=>"navbar-item" %>
+				  <%= link_to 'Deeds', '#', :class=>"navbar-item" %>
+				  <%= link_to 'Minutes', '#', :class=>"navbar-item" %>
+				  <%= link_to 'Land Patents', '#', :class=>"navbar-item" %>
+				  <%= link_to 'Wills', '#', :class=>"navbar-item" %>
+				  <%= link_to 'Misc. Records', '#', :class=>"navbar-item" %>
+        </div>
+      </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link has-text-white">
+          Families
+        </a>
+        <div class="navbar-dropdown">
+          <%= link_to 'Family Sheet', '#', :class=>"navbar-item" %>
+					<%= link_to 'Ancestors', '#', :class=>"navbar-item" %>
+					<%= link_to 'Photo Gallery', '#', :class=>"navbar-item" %>
+        </div>
+      </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link has-text-white">
+          Military
+        </a>
+        <div class="navbar-dropdown">
+          <%= link_to 'Soldiers', '#', :class=>"navbar-item" %>
+				  <%= link_to 'Military Links', '#', :class=>"navbar-item" %>
+				  <%= link_to 'Monuments', '#', :class=>"navbar-item" %>
+				  <%= link_to 'Order Records', '#', :class=>"navbar-item" %>
+        </div>
+      </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link has-text-white">
+          Vital Records
+        </a>
+        <div class="navbar-dropdown">
+          <%= link_to 'Births', '#', :class=>"navbar-item" %>
+          <%= link_to 'Deaths', '#', :class=>"navbar-item" %>
+          <%= link_to 'Marriages', '#', :class=>"navbar-item" %>
+          <%= link_to 'Diseases', '#', :class=>"navbar-item" %>
+          <%= link_to 'Order Records', '#', :class=>"navbar-item" %>
+        </div>
+      </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link has-text-white">
+          Towns and Cities
+        </a>
+        <div class="navbar-dropdown">
+          <%= link_to 'Towns', '#', :class=>"navbar-item" %>
+				  <%= link_to 'Businesses', '#', :class=>"navbar-item" %>
+				  <%= link_to 'Schools', '#', :class=>"navbar-item" %>
+				  <%= link_to 'Churches', '#', :class=>"navbar-item" %>
+        </div>
+      </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link has-text-white">
+          Resources
+        </a>
+        <div class="navbar-dropdown">
+          <%= link_to 'Bibles', '#', :class=>"navbar-item" %>
+				  <%= link_to 'History', '#', :class=>"navbar-item" %>
+					<%= link_to 'Our Policies', '#', :class=>"navbar-item" %>
+					<%= link_to 'Template Instructions', '#', :class=>"navbar-item" %>
+					<%= link_to 'Typography', '#', :class=>"navbar-item" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
     <%= yield %>
   </body>
 </html>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+</script>
