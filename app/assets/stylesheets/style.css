@@ -1,5 +1,5 @@
 ﻿/*  Designed by Genealogy Web Templates A Division of Templates In Time
- *	 https://genealogywebtemplates.com           
+ *	 https://genealogywebtemplates.com
 
 Main Colors used in this template
 #283b46-darkest color
@@ -181,7 +181,7 @@ nav {
 	border-bottom:  4px solid #86a7ba;
 	height: 40px;
 	padding-top: 4px;
-	margin-top: -10px;	
+	margin-top: -10px;
 	margin-bottom: 5px;
 	text-transform: uppercase;
 }
@@ -237,7 +237,7 @@ ul.slimmenu li > ul > li ul {display: none; position: absolute; left: 100%; top:
 ul.slimmenu li a:hover,
 ul.slimmenu li ul li a:hover {text-decoration: none;}
 .menu-collapser {width: 96%; margin: 0 2%; position: relative; text-align: left; height: 42px; line-height: 42px; font-size: 18px; padding: 0 8px; box-sizing: border-box;}
-.collapse-button {position: absolute; right: 8px; top: 50%; width: 40px; background-repeat: repeat-x; border-radius: 4px; color: #ffffff; padding: 7px 10px; cursor: pointer; 
+.collapse-button {position: absolute; right: 8px; top: 50%; width: 40px; background-repeat: repeat-x; border-radius: 4px; color: #ffffff; padding: 7px 10px; cursor: pointer;
             font-size: 14px; text-align: center; transform: translate(0, -50%); box-sizing: border-box;}
 ul.slimmenu.collapsed {list-style-type: none; margin: 0 1%; padding: 0; width: 98%; text-align: left;}
 ul.slimmenu.collapsed li {border-left: none; display: block; width: 100%; box-sizing: border-box; z-index: 999; text-align: left;}
@@ -254,7 +254,7 @@ ul.slimmenu.collapsed li ul li ul li a {padding-left: 30px;}
 ul.slimmenu li .sub-collapser {visibility: hidden; position: absolute; right: 0; top: 0; width: 0; height: 100%; text-align: center; z-index: 999; cursor: pointer;}
 ul.slimmenu li a {display: block;font-family: 'Open Sans', sans-serif; transition: background-color 0.2s ease-out;}
 ul.slimmenu.collapsed li .sub-collapser {visibility: visible;}
-	
+
 /* ======== LAYOUT RULES ======== */
 /* ======== Row 4 is the container for footer area   ======== */
 .row4 {background: #202020; padding: 0; color: #fff; border-top: 4px solid #86a7ba;}
@@ -263,8 +263,17 @@ ul.slimmenu.collapsed li .sub-collapser {visibility: visible;}
 /* ======== Row 5 is the Floral Container ======== */
 
 /* ======== Fancy Box ======== */
-.fancyBox {background: url('../images/headerback.jpg'); padding: 6px; margin-top: -5px; margin-bottom: 10px; border-bottom:  4px solid #86a7ba; box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.4);}
-.fancyBox2 {background: url('../images/headerback.jpg'); padding: 6px; margin-top: 10px; border-top: 4px solid #86a7ba;}
+.fancyBox {
+	background-image: url('headerback.jpg');
+	font-family: 40px 'Philosopher', Verdana, Helvetica, sans-serif;
+	color: #8293A1;
+	font-size: 28px;
+	padding: 6px;
+	margin-top: -5px;
+	margin-bottom: 10px;
+	border-bottom:  4px solid #86a7ba;
+	box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.4);}
+.fancyBox2 {background-image: url('headerback.jpg'); padding: 6px; margin-top: 10px; border-top: 4px solid #86a7ba;}
 
 .container {width: 1200px;	margin: 0 auto;	margin-bottom: 10px;}
 
@@ -275,10 +284,10 @@ ul.slimmenu.collapsed li .sub-collapser {visibility: visible;}
 header {
 	width: 100%;
 	color:#fff;
-	background:#283b46;   
+	background:#283b46;
 	background-image: none;
 	background-image: linear-gradient(-45deg, #86a7ba, #334c5b 50%, #283b46);
-	border-bottom: 1px solid  #283b46;	
+	border-bottom: 1px solid  #283b46;
 	padding-top: 20px;
 	margin: 0;
 	min-height: 130px;
@@ -288,7 +297,7 @@ header {
 	font: 40px 'Philosopher', Verdana, Helvetica, sans-serif;
 	color: #ffffff;
 	text-decoration: none;
-	margin: 0; 
+	margin: 0;
 }
 .slogan {
 	font-size: 28px;
@@ -296,8 +305,8 @@ header {
 	color: #ffffff;
 	padding: 10px;
 	font-style:italic;
-	margin: 0;
-}	
+	margin-bottom: 1%;
+}
 .logoBox25Left  {float: left; width: 23%; padding: 10px 0; margin: 0;}
 .logoBox25Right {float: right; width: 23%; padding: 10px 0; margin: 0;}
 
@@ -306,7 +315,7 @@ header {
 .contentBox2b {float: right; width: 48%; padding: 0; margin: 0 0 0 2%;}
 
 .contentBox3a {float: left; width: 30%; padding: 10px; margin: 0 1% 5px 1%;}
-.contentBox3b {float: left; width: 30%; padding: 10px; margin: 0 1% 5px 1%;}
+.contentBox3b {float: left; width: 30%; padding: 5px; margin: 7% 1% 5px 1%;}
 .contentBox3c {float: left; width: 30%; padding: 10px; margin: 0 0 5px 0;}
 
 .contentBox4a {float: left; width: 23.5%; padding: 0; margin: 0 1% 0 0;}
@@ -337,25 +346,25 @@ footer a:hover {color: #ccc;}
 .copyright {letter-spacing: 3px; text-align: center; font-size: 90%; color: #fff; margin: 0; padding:0;}
 
 /* Buttons ========== */
-.sm-btn a {display: inline-block; color: #334c5b; font: 14px 'Jura', Verdana, Helvetica, sans-serif; background: #86a7ba; padding: 3px 4px; text-align: center; 
+.sm-btn a {display: inline-block; color: #334c5b; font: 14px 'Jura', Verdana, Helvetica, sans-serif; background: #86a7ba; padding: 3px 4px; text-align: center;
 	text-decoration: none; font-weight: normal; border: solid 1px #3d5a6c; border-radius: 5px; box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2), 0 1px 1px rgba(0, 0, 0, 0.5);}
-.sm-btn a:hover  {color: #fff!important; text-decoration: none; padding: 3px 4px; font-weight: normal; background: #86a7ba; border: solid 1px #3d5a6c; 
+.sm-btn a:hover  {color: #fff!important; text-decoration: none; padding: 3px 4px; font-weight: normal; background: #86a7ba; border: solid 1px #3d5a6c;
 	border-radius: 5px; box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2), 0 1px 1px rgba(0, 0, 0, 0.5);}
-	
-.btn-detail {position: relative; background-color: #334c5b; background: linear-gradient(#334c5b, #3d5a6c);  border: solid 1px #283b46; color: #fff !important; font-weight: normal; font-size: 80%; font-variant: small-caps; text-decoration: none; 
+
+.btn-detail {position: relative; background-color: #334c5b; background: linear-gradient(#334c5b, #3d5a6c);  border: solid 1px #283b46; color: #fff !important; font-weight: normal; font-size: 80%; font-variant: small-caps; text-decoration: none;
 	padding: 5px 24px 5px 5px; border-radius: 5px; box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2), 0 1px 1px rgba(0, 0, 0, 0.5);}
 .btn-detail:after {position: absolute; font-family: 'FontAwesome'; content: "\f0a9"; top: 8px; right: 5px;}
 .btn-detail:hover {background-color: #222; background: linear-gradient(#555, #222); border: solid 1px #000; color: #fff !important; font-weight: normal; font-variant: small-caps; text-decoration: none;}
 .btn-detail a {color: #ffffff!important; text-decoration: none !important; font-weight: normal; outline: none;}
 
-.btn-cart {position: relative; display: inline-block; white-space: nowrap; background-color: #334c5b; background: linear-gradient(#334c5b, #3d5a6c); border-color: #334c5b; color: #fff; 
+.btn-cart {position: relative; display: inline-block; white-space: nowrap; background-color: #334c5b; background: linear-gradient(#334c5b, #3d5a6c); border-color: #334c5b; color: #fff;
 	font-weight: normal; text-decoration: none; padding: 5px 8px 5px 35px;	border-radius: 5px;}
 .btn-cart:before {position: absolute; font-family: 'FontAwesome'; content: "\f07a"; top: 5px; left: 10px;}
 .btn-cart:hover {background-color: #222; background: linear-gradient(#555, #222); border-color: #222; color: #fff; font-weight: normal; text-decoration: none;}
 
 .btn-solid {display: inline-block; white-space: nowrap;	color: #fff; font: 20px 'Jura', Verdana, Helvetica, sans-serif; padding: 10px; border-radius: 15px; text-decoration: none; font-weight: normal;
 	font-variant: small-caps; border: solid 1px #000; background: #222; box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2), 0 1px 1px rgba(0, 0, 0, 0.5);}
-.btn-solid:hover {color: #fff; font: 20px 'Jura', Verdana, Helvetica, sans-serif; padding: 10px; border-radius: 15px; text-decoration: none; font-weight: normal;	font-variant: small-caps; 
+.btn-solid:hover {color: #fff; font: 20px 'Jura', Verdana, Helvetica, sans-serif; padding: 10px; border-radius: 15px; text-decoration: none; font-weight: normal;	font-variant: small-caps;
 	border: solid 1px #000; background: #334c5b; box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2), 0 1px 1px rgba(0, 0, 0, 0.5);}
 .btn-solid a {color: #fff;}
 .btn-solid a:hover {color: #fff;}
@@ -365,17 +374,17 @@ form.contactform {width: 99%; text-align: left;}
 .contactform label {width: 99%; text-align: left; font-style: italic; display: block; margin-bottom: 4px;}
 .contactform input {width: 99%; border: 1px #c0c0c0 solid; background-color: #efefef; padding: 5px; margin-bottom: 10px; color: #000000;}
 .contactform textarea {width: 99%; border: 1px #c0c0c0 solid; background-color: #efefef; padding: 5px; resize:none; color: #000000;}
-.contactform .submit {width: 100px; margin: 10px 0 20px 0; cursor: pointer; color: #444; 
-	font: 16px 'Raleway', Verdana, Helvetica, sans-serif; font-weight: normal; padding: 1px 14px; text-decoration: none; background-color: #eee; background: linear-gradient(#eee, #ccc); 
+.contactform .submit {width: 100px; margin: 10px 0 20px 0; cursor: pointer; color: #444;
+	font: 16px 'Raleway', Verdana, Helvetica, sans-serif; font-weight: normal; padding: 1px 14px; text-decoration: none; background-color: #eee; background: linear-gradient(#eee, #ccc);
 	border: solid 1px #ccc;	border-radius: 5px; box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.8), 0 1px 1px rgba(0, 0, 0, 0.3);}
-.contactform .submit:hover {text-decoration: none; color: #eee; background-color: #334c5b; background: linear-gradient(#334c5b, #334c5b); 
+.contactform .submit:hover {text-decoration: none; color: #eee; background-color: #334c5b; background: linear-gradient(#334c5b, #334c5b);
 	border: solid 1px #334c5b; border-radius: 5px; box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2), 0 1px 1px rgba(0, 0, 0, 0.5);}
 /* Drop Caps ========== */
 .dropcap {overflow: hidden;}
 .dropcap:first-letter {color: #334c5b;	display: block; float: left; font: 60px/50px Georgia, Garamond, serif;	padding: 6px 4px 0 0;}
 
 /* Big Lettering ========== */
-.bignumber {border-radius: 50%; color: #505050; display: block; float: left; font: normal 30px/50px 'Raleway', Garamond, Georgia, serif; margin: -10px 10px 5px 0; text-align: center; 
+.bignumber {border-radius: 50%; color: #505050; display: block; float: left; font: normal 30px/50px 'Raleway', Garamond, Georgia, serif; margin: -10px 10px 5px 0; text-align: center;
 	text-transform: uppercase; height: 50px; width: 50px; border: 1px #505050 solid; text-shadow: 1px 1px 1px rgba(0,0,0,0.5);}
 
 .bigletters {font: 2.0em 'Raleway', Arial, Verdana, Helvetica, sans-serif; font-weight: bold; text-align: center; color: #334c5b; margin: 5px; text-shadow: 1px 1px 1px rgba(0,0,0,0.5);}
@@ -457,8 +466,8 @@ legend {color: #334c5b; font: 32px 'Philosopher', Verdana, Helvetica, sans-serif
 	nav {float: none; margin: 0;}
 	/* === content box coding ==== */
 	.contentBox8,
-	.contentBox2a, .contentBox2b, 
-   	.contentBox3a, .contentBox3b, .contentBox3c, 
+	.contentBox2a, .contentBox2b,
+   	.contentBox3a, .contentBox3b, .contentBox3c,
    	.contentBox4a, .contentBox4b, .contentBox4c, .contentBox4d {width: 94%; padding: 10px; margin: 0 auto 20px auto; float: none; }
    	.sidebarLeft, .sidebarRight {float: none; width: 94%; margin: 0 auto;}
    	.contentRight, .contentLeft {float: none; width: 94%; margin: 0 auto;}
@@ -480,9 +489,9 @@ legend {color: #334c5b; font: 32px 'Philosopher', Verdana, Helvetica, sans-serif
    	.menu-collapser {width: 300px; margin: 0 auto;}
    	ul.slimmenu.collapsed {width: 300px; margin: 0 auto;}
 	/* === content box coding ==== */
-	.contentBox8,   
-	.contentBox2a, .contentBox2b, 
-   	.contentBox3a, .contentBox3b, .contentBox3c, 
+	.contentBox8,
+	.contentBox2a, .contentBox2b,
+   	.contentBox3a, .contentBox3b, .contentBox3c,
    	.contentBox4a, .contentBox4b, .contentBox4c, .contentBox4d {width: 94%; padding: 10px; margin: 0 auto 20px auto; float: none; }
    	.sidebarLeft, .sidebarRight {float: none; width: 98%; margin: 0 auto;}
    	.contentRight, .contentLeft {float: none; width: 98%; margin: 0 auto;}
@@ -507,8 +516,8 @@ legend {color: #334c5b; font: 32px 'Philosopher', Verdana, Helvetica, sans-serif
    	ul.slimmenu.collapsed {width: 300px; margin: 0 auto;}
 	/* === content box coding ==== */
 	.contentBox8 {width: 47%; margin: 1%; padding: 0;}
-   	.contentBox2a, .contentBox2b, 
-   	.contentBox3a, .contentBox3b, .contentBox3c, 
+   	.contentBox2a, .contentBox2b,
+   	.contentBox3a, .contentBox3b, .contentBox3c,
    	.contentBox4a, .contentBox4b, .contentBox4c, .contentBox4d {width: 94%; padding: 10px; margin: 0 auto 20px auto; float: none; }
    	.sidebarLeft, .sidebarRight {float: none; width: 98%; margin: 1%;}
    	.contentRight, .contentLeft {float: none; width: 98%; margin: 1%;}
@@ -531,9 +540,9 @@ legend {color: #334c5b; font: 32px 'Philosopher', Verdana, Helvetica, sans-serif
    	.menu-collapser {width: 300px; margin: 0 auto;}
    	ul.slimmenu.collapsed {width: 300px; margin: 0 auto;}
 	/* === content box coding ==== */
-	.contentBox8 {width: 47%; margin: 1%; padding: 0;}   
-   	.contentBox2a, .contentBox2b, 
-   	.contentBox3a, .contentBox3b, .contentBox3c, 
+	.contentBox8 {width: 47%; margin: 1%; padding: 0;}
+   	.contentBox2a, .contentBox2b,
+   	.contentBox3a, .contentBox3b, .contentBox3c,
    	.contentBox4a, .contentBox4b, .contentBox4c, .contentBox4d {width: 94%; padding: 10px; margin: 0 auto 20px auto; float: none; }
    	.sidebarLeft, .sidebarRight {float: none; width: 98%; margin: 1%;}
    	.contentRight, .contentLeft {float: none; width: 98%; margin: 1%;}
@@ -556,8 +565,8 @@ legend {color: #334c5b; font: 32px 'Philosopher', Verdana, Helvetica, sans-serif
    	.menu-collapser {width: 300px; margin: 0 auto;}
    	ul.slimmenu.collapsed {width: 300px; margin: 0 auto;}
 	/* === content box coding ==== */
-	.contentBox8 {width: 47%; margin: 1%; padding: 0;}   
-   	.contentBox2a, .contentBox2b, 
+	.contentBox8 {width: 47%; margin: 1%; padding: 0;}
+   	.contentBox2a, .contentBox2b,
    	.contentBox3a, .contentBox3b, .contentBox3c {width: 98%; padding: 10px; margin: 0 auto 20px auto; float: none; max-width: 450px;}
    	.contentBox4a, .contentBox4b, .contentBox4c, .contentBox4d {width: 48%; margin: 1%; padding: 0;}
    	.sidebarLeft, .sidebarRight {width: 98%; margin: 1%; padding: 0;}
@@ -579,8 +588,8 @@ legend {color: #334c5b; font: 32px 'Philosopher', Verdana, Helvetica, sans-serif
    	.menu-collapser {width: 300px; margin: 0 auto;}
    	ul.slimmenu.collapsed {width: 300px; margin: 0 auto;}
 	/* === content box coding ==== */
-	.contentBox8 {width: 47%; margin: 1%; padding: 0;}   
-   	.contentBox2a, .contentBox2b, 
+	.contentBox8 {width: 47%; margin: 1%; padding: 0;}
+   	.contentBox2a, .contentBox2b,
    	.contentBox3a, .contentBox3b, .contentBox3c {width: 98%; padding: 10px; margin: 0 auto 20px auto; float: none; max-width: 450px;}
    	.contentBox4a, .contentBox4b, .contentBox4c, .contentBox4d {width: 48%; margin: 1%; padding: 0;}
    	.sidebarLeft, .sidebarRight {width: 98%; margin: 1%; padding: 5px;}
@@ -609,6 +618,3 @@ legend {color: #334c5b; font: 32px 'Philosopher', Verdana, Helvetica, sans-serif
 	.container {width: 98%; margin: 0 auto;}
    	.contentBox8 {width: 23%; margin: 1%; padding: 0;}
 }
-
-
-
