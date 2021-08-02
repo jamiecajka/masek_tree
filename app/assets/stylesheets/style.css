@@ -12,14 +12,14 @@ Main Colors used in this template
 /* ================================================== GENERAL RULES ============================================================== */
 
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Raleway|Open+Sans|Great+Vibes|Jura|Philosopher);
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Jura:wght@300&family=Open+Sans:wght@300&family=Philosopher&family=Raleway:wght@100&display=swap');
 
 html {height: 101%;	background: #ffffff;}
 header, figure, figcaption, footer, nav, article, section, aside {display: block;}
 
 body {
 	background: #fff;
-	font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: #000000;
 	text-align: left;
 	margin: 0 auto;
@@ -27,7 +27,13 @@ body {
 }
 /*  ========== Horizontal Rules and Clear Floats ============== */
 hr {background-color: #774766; border: none; color: #774766; height: 1px; clear: both;}
-hr.fancy {background: transparent url('../images/hr.png') center center no-repeat; color: #eee;  border: none; height: 36px;}
+hr.fancy {
+	background: transparent url('hr.png') center center no-repeat;
+	color: #eee;
+	border: none;
+	height: 36px;
+}
+
 hr.noshow {background-color: transparent; border: none; color: #fff; height: 0; clear: both; visibility: hidden;}
 .clearfix:before, .clearfix:after, .breadcrumbs:before, .breadcrumbs:after, .group:before, .group:after,
 .container:before, .container:after {display: table; content: "";}
@@ -48,11 +54,11 @@ ol.leadingzero {background: none; list-style-position: outside; list-style-type:
 a {color: #283b46;  text-decoration: none; font-weight: normal;	outline: none;}
 a:hover {color: #3d5a6c; text-decoration: none;	font-weight: normal; outline: none;}
 
-h1 {font: 42px 'Philosopher', serif, Verdana, Helvetica, sans-serif; color: #334c5b; margin: .3em 0 .3em 0;}
+h1 {font-family: 'Philosopher', sans-serif; font-size: 42px; color: #334c5b; margin: .3em 0 .3em 0;}
 h2 {font: 28px 'Philosopher', serif, Arial, Verdana, Helvetica, sans-serif; color: #3d5a6c; font-weight:normal; text-align:center; margin: .3em 0; letter-spacing: 1px;}
 h3 {font: 42px 'Great Vibes', Verdana, Helvetica, sans-serif; color: #3d5a6c; padding: 0; margin: 10px 0; padding: 5px 0;}
 h4 {font: normal 28px 'Philosopher', Verdana, Helvetica, sans-serif; color: #3d5a6c; margin: .3em 0;}
-h5 {font: normal 24px 'Raleway', Verdana, Helvetica, sans-serif; color: #777; margin: .3em 0; font-variant: small-caps;}
+h5.fieldset {font: normal 24px 'Raleway', Verdana, Helvetica, sans-serif; color: #777; margin: .3em 0; font-variant: small-caps;}
 h6 {font: normal 24px 'Jura', Verdana, Helvetica, sans-serif; color: #334c5b; margin: .3em 0;}
 h2.alternate {
 	font: 1.6em 'Philosopher', Arial, Verdana, Helvetica, sans-serif;
@@ -337,7 +343,7 @@ header {
 .contentBox75Left  {float: left; width: 73%; padding: 10px 0; margin: 0;}
 .contentBox75Right {float: right; width: 73%; padding: 10px 0; margin: 0;}
 
-.contentBox8 {float: left; width: 11.5%; padding: 0; margin: 0 1% 0 0;}
+.contentBox6 {float: left; width: 15.6%; padding: 0; margin: 0 1% 0 0;}
 
 /* ======== FOOTER ======== */
 footer {clear: both; color: #ffffff; padding: 10px; font-size: 80%;}
@@ -407,7 +413,13 @@ blockquote.rightside {float: right; display: block; width: 30%; border-style: do
 .breadcrumbs a, .breadcrumbs a:hover {font-weight: bold; text-decoration: none;}
 
 /* Fieldset Legend ========== */
-fieldset {width: 90%; border: 1px dotted #86a7ba; padding: 20px 3%; margin: 20px 2%;}
+.ancestors {
+	width: 90%;
+	border: 1px dotted #86a7ba;
+	padding: 20px 3%;
+	margin: 20px 2%;
+}
+
 legend {color: #334c5b; font: 32px 'Philosopher', Verdana, Helvetica, sans-serif; background-color: #ffffff; padding: 0 10px;}
 
 /* Google Maps ========== */
@@ -465,10 +477,19 @@ legend {color: #334c5b; font: 32px 'Philosopher', Verdana, Helvetica, sans-serif
 	.text-align-right {text-align:center; padding-right: 0;}
 	nav {float: none; margin: 0;}
 	/* === content box coding ==== */
-	.contentBox8,
+	.contentBox6,
 	.contentBox2a, .contentBox2b,
    	.contentBox3a, .contentBox3b, .contentBox3c,
-   	.contentBox4a, .contentBox4b, .contentBox4c, .contentBox4d {width: 94%; padding: 10px; margin: 0 auto 20px auto; float: none; }
+   	.contentBox4a, .contentBox4b, .contentBox4c, .contentBox4d
+		{
+			width: 94%;
+			padding: 10px;
+			margin: 0 auto 20px auto;
+			float: none;
+		}
+
+
+
    	.sidebarLeft, .sidebarRight {float: none; width: 94%; margin: 0 auto;}
    	.contentRight, .contentLeft {float: none; width: 94%; margin: 0 auto;}
 	.contentBox25Left, .contentBox25Right {width: 98%; margin:1%; padding: 0; float: none;}
@@ -489,7 +510,7 @@ legend {color: #334c5b; font: 32px 'Philosopher', Verdana, Helvetica, sans-serif
    	.menu-collapser {width: 300px; margin: 0 auto;}
    	ul.slimmenu.collapsed {width: 300px; margin: 0 auto;}
 	/* === content box coding ==== */
-	.contentBox8,
+	.contentBox6,
 	.contentBox2a, .contentBox2b,
    	.contentBox3a, .contentBox3b, .contentBox3c,
    	.contentBox4a, .contentBox4b, .contentBox4c, .contentBox4d {width: 94%; padding: 10px; margin: 0 auto 20px auto; float: none; }
@@ -515,7 +536,7 @@ legend {color: #334c5b; font: 32px 'Philosopher', Verdana, Helvetica, sans-serif
    	.menu-collapser {width: 300px; margin: 0 auto;}
    	ul.slimmenu.collapsed {width: 300px; margin: 0 auto;}
 	/* === content box coding ==== */
-	.contentBox8 {width: 47%; margin: 1%; padding: 0;}
+	.contentBox6 {width: 47%; margin: 1%; padding: 0;}
    	.contentBox2a, .contentBox2b,
    	.contentBox3a, .contentBox3b, .contentBox3c,
    	.contentBox4a, .contentBox4b, .contentBox4c, .contentBox4d {width: 94%; padding: 10px; margin: 0 auto 20px auto; float: none; }
@@ -540,7 +561,7 @@ legend {color: #334c5b; font: 32px 'Philosopher', Verdana, Helvetica, sans-serif
    	.menu-collapser {width: 300px; margin: 0 auto;}
    	ul.slimmenu.collapsed {width: 300px; margin: 0 auto;}
 	/* === content box coding ==== */
-	.contentBox8 {width: 47%; margin: 1%; padding: 0;}
+	.contentBox6 {width: 47%; margin: 1%; padding: 0;}
    	.contentBox2a, .contentBox2b,
    	.contentBox3a, .contentBox3b, .contentBox3c,
    	.contentBox4a, .contentBox4b, .contentBox4c, .contentBox4d {width: 94%; padding: 10px; margin: 0 auto 20px auto; float: none; }
@@ -565,7 +586,7 @@ legend {color: #334c5b; font: 32px 'Philosopher', Verdana, Helvetica, sans-serif
    	.menu-collapser {width: 300px; margin: 0 auto;}
    	ul.slimmenu.collapsed {width: 300px; margin: 0 auto;}
 	/* === content box coding ==== */
-	.contentBox8 {width: 47%; margin: 1%; padding: 0;}
+	.contentBox6 {width: 47%; margin: 1%; padding: 0;}
    	.contentBox2a, .contentBox2b,
    	.contentBox3a, .contentBox3b, .contentBox3c {width: 98%; padding: 10px; margin: 0 auto 20px auto; float: none; max-width: 450px;}
    	.contentBox4a, .contentBox4b, .contentBox4c, .contentBox4d {width: 48%; margin: 1%; padding: 0;}
@@ -588,7 +609,7 @@ legend {color: #334c5b; font: 32px 'Philosopher', Verdana, Helvetica, sans-serif
    	.menu-collapser {width: 300px; margin: 0 auto;}
    	ul.slimmenu.collapsed {width: 300px; margin: 0 auto;}
 	/* === content box coding ==== */
-	.contentBox8 {width: 47%; margin: 1%; padding: 0;}
+	.contentBox6 {width: 47%; margin: 1%; padding: 0;}
    	.contentBox2a, .contentBox2b,
    	.contentBox3a, .contentBox3b, .contentBox3c {width: 98%; padding: 10px; margin: 0 auto 20px auto; float: none; max-width: 450px;}
    	.contentBox4a, .contentBox4b, .contentBox4c, .contentBox4d {width: 48%; margin: 1%; padding: 0;}
@@ -607,7 +628,7 @@ legend {color: #334c5b; font: 32px 'Philosopher', Verdana, Helvetica, sans-serif
    	.menu-collapser {width: 300px; margin: 0 auto;}
    	ul.slimmenu.collapsed {width: 300px; margin: 0 auto;}
    	.sidebarLeft, .sidebarRight {width: 30%; margin: 2% 0 0 0; padding: 5px;}
-   	.contentBox8 {width: 23%; margin: 1%; padding: 0;}
+   	.contentBox6 {width: 23%; margin: 1%; padding: 0;}
 	.contentBox3a, .contentBox3b, .contentBox3c {width: 29%;}
    	.contentBox4a, .contentBox4b, .contentBox4c, .contentBox4d {width: 48%; margin: 1%; padding: 0;}
 }
@@ -616,5 +637,5 @@ legend {color: #334c5b; font: 32px 'Philosopher', Verdana, Helvetica, sans-serif
 /* ================================================================================================================================== */
 @media screen and (min-width: 1025px) and (max-width: 1279px) {
 	.container {width: 98%; margin: 0 auto;}
-   	.contentBox8 {width: 23%; margin: 1%; padding: 0;}
+   	.contentBox6 {width: 23%; margin: 1%; padding: 0;}
 }

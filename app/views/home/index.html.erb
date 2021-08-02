@@ -19,3 +19,55 @@
 			</div>
 			<div class="clear"></div>
 	</div></div>
+  <div class="clear"></div>
+  <div class="container">
+  	<h1 class="is-family-sans-serif is-size-2">Welcome!</h1>
+  	<p class="dropcap has-text-weight-semibold">I was talking to my grandma after the last Masek family reunion, and I realized that we really needed something that lists all the family members. My mom's family has a book they put together years ago, but with the number of people in this family, since Jiri and Katerina came to America 6 or 7 generations ago, I thought a book might get a bit large (not to mention hard to update en mass). The obvious solution to me, a software engineer, was to make a webpage, so here we are. My goal with this page is to allow it to grow on its own, to allow anyone who comes to the page to add their family members, memories, pictures, ect. To begin with, I'm just putting up the family tree sections so that people can start adding to it. After that, I have binders upon binders of documents and pictures from my grandma that I am working on getting scanned in, so that I can eventually get them uploaded here so that everyone has access to them. After/during that, I have a lot of options. I may post polls, to see what people are most interested in going up next. If you wanted to stay updated, you can join the mailing list or just check back here every once in awhile and I'll post updates regularly(ish. Hopefully. I work full time and am starting grad school in September, so if updates are a little slow in coming, bare with me.) I look forward to growing our family's history, and if you have any questions/comments/concerns, feel free to send me a message. ~Jamie</p>
+    <br>
+  	<h3 class="if-family-code is-size-2">Updates</h3>
+    <% @posts.each do |p| %>
+      <p class="has-text-weight-semibold"><%= p.created_at.strftime("%B %d, %Y") %></p>
+      <p class="has-text-weight-semibold"><%= p.body %></p>
+      <br>
+    <% end %>
+    <hr class="fancy">
+    <fieldset class="ancestors">
+	<legend>Our Ancestors</legend>
+	<div class="contentBox6">
+		<h5 class="center">Charles</h5>
+		<p class="center">
+		<img alt="" class="img-curved" <%= image_tag 'charles.jpg' %>></p>
+		<p class="small center">Place information here</p>
+	</div>
+	<div class="contentBox6">
+		<h5 class="center">Katherine</h5>
+		<p class="center">
+		<img alt="" class="img-curved" <%= image_tag 'Katherine.jpg' %>></p>
+		<p class="small center">Place information here</p>
+	</div>
+	<div class="contentBox6">
+		<h5 class="center">Frank</h5>
+		<p class="center">
+		<img alt="" class="img-curved" <%= image_tag 'turtle1.jpeg' %>></p>
+		<p class="small center">Place information here</p>
+	</div>
+	<div class="contentBox6">
+		<h5 class="center">Anton</h5>
+		<p class="center">
+		<img alt="" class="img-curved" <%= image_tag 'Anton.jpg' %>></p>
+		<p class="small center">Place information here</p>
+	</div>
+	<div class="contentBox6">
+		<h5 class="center">John</h5>
+		<p class="center">
+		<img alt="" class="img-curved" <%= image_tag 'John.jpeg' %>></p>
+		<p class="small center">Place information here</p>
+	</div>
+	<div class="contentBox6">
+		<h5 class="center">Anna</h5>
+		<p class="center">
+		<img alt="" class="img-curved" <%= image_tag 'turtle2.png' %>></p>
+		<p class="small center">Place information here</p>
+	</div>
+	<div class="clear"></div>
+	</fieldset>
